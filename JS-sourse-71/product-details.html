@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <title>جزئیات محصول</title>
+</head>
+
+<body dir="rtl">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header class="bg-[#263C97]">
+        <section class="py-3 text-center border-b border-gray-400 px-5 sm:px-0">
+            <p class="font-light text-[12px] text-white">به فروشگاه سمی کدر خوش آمدید 30 درصد تخفیف برای اولین خرید
+            </p>
+        </section>
+        <nav class=" py-5 shadow-md md:text-sm px-5 md:px-0 relative">
+            <div class="container mx-auto text-center sm:flex sm:justify-between items-center">
+                <div class="w-full sm:w-auto mb-5 sm:mb-0">
+                    <img class="w-28 mx-auto" src="./images/logo.png" alt="logo">
+                </div>
+                <div id="mobile-menu"
+                    class="bg-[#660bce] md:bg-transparent text-white shadow-2xl fixed top-0 bottom-0 z-50 w-[250px] -right-[250px]  pt-14 pr-5 md:pt-0  md:w-auto md:static transition-all duration-500">
+                    <div class="w-full md:hidden">
+                        <img class="" src="./images/logo-white.png" alt="logo">
+                    </div>
+                    <ul class="flex flex-col md:flex-row gap-6 font-medium md:font-light mt-16 md:mt-0">
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-home"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./index.html">
+                                خانه
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-store"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./shop.html">
+                                فروشگاه
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-newspaper"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]" href="">
+                                وبلاگ
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-phone"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]" href="">
+                                درباره ما
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="w-full sm:w-auto flex gap-5 items-center justify-center sm:justify-start flex-wrap sm:flex-nowrap">
+
+                    <div class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-user"></i></span>
+                        <div>
+                            <a href="">ورود</a>
+                            /
+                            <a href="">ثبت نام</a>
+                        </div>
+                    </div>
+                    <a class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]"
+                        href="">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-heart"></i></span>
+                        <p>علاقه مندی</p>
+                    </a>
+                    <a class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]"
+                        href="">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-shopping-basket"></i></span>
+                        <p>سبد خرید</p>
+                    </a>
+                    <button
+                        class="text-white md:hidden transition-all duration-300 hover:text-[#fcbe00] absolute top-5 left-5"
+                        id="bars">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-bars"></i></span>
+                        <span class="text-lg sm:text-3xl hidden"><i class="fas fa-window-close"></i></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Main                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="px-5 lg:px-0 my-20">
+        <div class="container mx-auto">
+            <div class="lg:flex items-center">
+                <div class="sm:flex lg:w-1/2">
+                    <div class="flex sm:block justify-between items-center" id="product-details-img">
+                        <div class="p-2 sm:p-5 border rounded-2xl w-fit cursor-pointer border-[#16bcdc]"
+                            onclick="productDetailsSlide(1)">
+                            <img src="./images/product-nav-1.jpg" alt="product">
+                        </div>
+                        <div class="p-2 sm:p-5 border rounded-2xl w-fit cursor-pointer my-3"
+                            onclick="productDetailsSlide(2)">
+                            <img src="./images/product-nav-2.jpg" alt="product">
+                        </div>
+                        <div class="p-2 sm:p-5 border rounded-2xl w-fit cursor-pointer"
+                            onclick="productDetailsSlide(3)">
+                            <img src="./images/product-nav-3.jpg" alt="product">
+                        </div>
+                    </div>
+                    <div class="sm:w-[570px] sm:h-[570px]" id="product-details-img-preview">
+                        <img class="w-full h-full" src="./images/product-nav-big-1.jpg" alt="">
+                        <img class="hidden" src="./images/product-nav-big-3.jpg" alt="">
+                        <img class="hidden" src="./images/product-nav-big-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-[#0d6efd] text-[26px]">
+                        سامسونگ گلکسی A12، 32 گیگابایت، مشکی - (قفل شده)
+                    </h3>
+                    <div class="my-3">
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                    </div>
+                    <h5 class="text-xl">
+                        <span class="text-green-500 pl-1">2.000.000 </span> تومان
+                    </h5>
+                    <hr class="my-5">
+                    <ul class="list-disc text-[#666] pr-4 my-5 text-lg">
+                        <li>صدای باس و استریو</li>
+                        <li>صفحه نمایش با وضوح 1080 در 720 پیکسل</li>
+                        <li>حافظه ذخیره سازی و تقویت سیم کارت: 12 گیگابایت رم، 256 گیگابایت</li>
+                        <li>سیستم عامل اندروید نسخه 10</li>
+                    </ul>
+                    <p class="text-[#666] text-lg">موجودی : <span class="text-[#16bcdc]">940</span></p>
+                    <div class="my-5 flex flex-wrap sm:flex-nowrap gap-5">
+                        <div class="border w-fit p-2">
+                            <span class="text-2xl px-3 cursor-pointer">+</span>
+                            <input class="h-10 w-24 focus:outline-none text-center" value="1" type="text">
+                            <span class="text-2xl px-3 cursor-pointer">-</span>
+                        </div>
+                        <button
+                            class="py-4 px-10 bg-[#16bcdc] text-white transition-colors duration-300 hover:text-black hover:bg-white hover:border">افزودن
+                            به سبد</button>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <button class="text-[#666] transition-colors duration-300 hover:text-[#16bcdc]">
+                                <span class="ml-2"><i class="far fa-heart"></i></span>
+                                افزودن به علاقه مندی
+                            </button>
+                            <button class="text-[#666] transition-colors duration-300 hover:text-[#16bcdc] mr-4">
+                                <span class="ml-2"><i class="fas fa-layer-group"></i></span>
+                                مقایسه
+                            </button>
+                        </div>
+                        <div>
+                            <button class="text-[#666] transition-colors duration-300 hover:text-[#16bcdc]">
+                                <span class="ml-2"><i class="fas fa-share-alt"></i></span>
+                                اشتراک
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <ul>
+                        <li>شناسه: <span class="text-[#666] mr-5">SC1002</span></li>
+                        <li>دسته بندی: <span class="text-[#666] mr-5 my-2">آیفون تبلت</span></li>
+                        <li>برچسب: <span class="text-[#666] mr-5">گوشی، تبلت</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-20">
+                <div class="border-b">
+                    <ul id="product-details-list" class="flex gap-5 sm:gap-10">
+                        <li class="text-lg sm:text-2xl py-3 border-b-2 border-[#16bcdc] cursor-pointer"
+                            onclick="productDetailsList(1)">توضیحات</li>
+                        <li class="text-[#b6b6b6] text-lg sm:text-2xl py-3 cursor-pointer"
+                            onclick="productDetailsList(2)">اطلاعات تکمیلی</li>
+                        <li class="text-[#b6b6b6] text-lg sm:text-2xl py-3 cursor-pointer"
+                            onclick="productDetailsList(3)">نظرات <span>(5)</span></li>
+                    </ul>
+                </div>
+                <div id="product-details-list-content">
+                    <div class="py-10">
+                        <p class="text-[#666] leading-8 text-justify">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است،
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و
+                            سه
+                            درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
+                            بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در
+                            این
+                            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                            رسد و
+                            زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                            اساسا مورد استفاده قرار گیرد.
+                        </p>
+                        <p class="text-[#666] leading-8 my-5 text-justify">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است،
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و
+                            سه
+                            درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
+                            بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در
+                            این
+                            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                            رسد و
+                            زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                            اساسا مورد استفاده قرار گیرد.
+                        </p>
+                        <p class="text-[#666] leading-8  text-justify">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است،
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و
+                            سه
+                            درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
+                            بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در
+                            این
+                            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                            رسد و
+                            زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                            اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                    <div class="py-10 hidden">
+                        <table class="w-full text-lg">
+                            <tr class="bg-[#F7F7F7]">
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">وزن</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">lbs 2</td>
+                            </tr>
+                            <tr>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">ابعاد</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">16 * 19 * 12</td>
+                            </tr>
+                            <tr class="bg-[#F7F7F7]">
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">رنگ</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">سیاه، سفید، آبی</td>
+                            </tr>
+                            <tr>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">اندازه</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">S, M, L, XL</td>
+                            </tr>
+                            <tr class="bg-[#F7F7F7]">
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">مدل</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">جدید</td>
+                            </tr>
+                            <tr>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">ارسال</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">استاندارد</td>
+                            </tr>
+                            <tr class="bg-[#F7F7F7]">
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">اطالاعات</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">شستشو با ماشین لباسشویی تا دمای 40 درجه
+                                    سانتیگراد/86 درجه
+                                    فارنهایت
+                                    با
+                                    چرخه ملایم
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">برند</td>
+                                <td class="py-5 px-3 w-1/2 text-[#454545]">سامسونگ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="py-10 hidden">
+                        <div>
+                            <div class="md:flex">
+                                <div class="md:w-1/3">
+                                    <h1 class="text-8xl text-[#5aab19]">5.00</h1>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-[#666]"><span class="px-2">01</span>نظر</p>
+                                </div>
+                                <div class="md:w-2/3 mt-5 md:mt-0">
+                                    <div class="border w-fit p-5 flex gap-5 items-start">
+                                        <img class="rounded-full" src="./images/author-sm-1.jpg" alt="">
+                                        <div>
+                                            <div>
+                                                <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                                <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                                <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                                <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                                <span class="text-yellow-400 text-lg"><i class="fas fa-star"></i></span>
+                                            </div>
+                                            <div class="flex gap-5 my-3">
+                                                <p>مدیر</p>
+                                                <p class="text-[#999]">2 دی 1402</p>
+                                            </div>
+                                            <p class="text-[#666]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                                چاپ و با استفاده از
+                                                طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                                                که لازم است</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-16">
+                                <h2 class="text-2xl font-medium">ارسال نظر</h2>
+                                <p class="my-3">آدرس ایمیل شما منتشر نخواهد شد. فیلدهای الزامی علامت گذاری شده اند *</p>
+                                <form>
+                                    <div class="flex gap-5 items-center">
+                                        <label>امتیاز</label>
+                                        <div class="my-3">
+                                            <span class="text-yellow-400 text-lg"><i class="far fa-star"></i></span>
+                                            <span class="text-yellow-400 text-lg"><i class="far fa-star"></i></span>
+                                            <span class="text-yellow-400 text-lg"><i class="far fa-star"></i></span>
+                                            <span class="text-yellow-400 text-lg"><i class="far fa-star"></i></span>
+                                            <span class="text-yellow-400 text-lg"><i class="far fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="sm:flex gap-10">
+                                        <input
+                                            class="py-4 px-3 text-lg w-full sm:w-1/2 border rounded-md focus:outline-none focus:border-[#16bcdc]"
+                                            type="text" placeholder="نام شما">
+                                        <input
+                                            class="py-4 px-3 text-lg mt-10 sm:mt-0 w-full sm:w-1/2 border rounded-md focus:outline-none focus:border-[#16bcdc]"
+                                            type="text" placeholder="ایمیل شما">
+                                    </div>
+                                    <textarea
+                                        class="w-full border rounded-md text-lg pt-3 px-5 mt-10 focus:outline-none"
+                                        id="" rows="8" placeholder="نظر شما"></textarea>
+                                    <div class="my-5 flex items-center gap-3">
+                                        <input class="h-5 w-5" type="checkbox">
+                                        <span class="text-[#454545] accent-[#16bcdc]">برای دفعه بعد که نظر می دهم نام،
+                                            ایمیل و وب سایت من
+                                            را در این مرورگر ذخیره
+                                            کنید.</span>
+                                    </div>
+                                    <button type="submit"
+                                        class="text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-fit rounded-sm transition-colors duration-300 hover:bg-white hover:text-black hover:border">ارسال</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Main                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="bg-[#1F2024] p-5 lg:px-0">
+        <div class="container mx-auto">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-10 py-5">
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-truck"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2"> تحویل رایگان </h5>
+                        <p class="text-[#999] text-sm"> برای تمام سفارشات بالای 120 دلار</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-money-check"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">پرداخت مطمئن</h5>
+                        <p class="text-[#999] text-sm"> 100% پرداخت امن</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-comments"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">مرکز کمک 24/7</h5>
+                        <p class="text-[#999] text-sm"> پشتیبانی ظریف 24/7</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-hand-holding-usd"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">با اطمینان خرید کنید</h5>
+                        <p class="text-[#999] text-sm">اگر کالا مشکل دارد</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-headset"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">خدمات دوستانه</h5>
+                        <p class="text-[#999] text-sm">30 روز ضمانت رضایت</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-[#666] my-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10">
+                <div>
+                    <h3 class="text-white text-xl">دانلود</h3>
+                    <p class="text-[#999] my-5">اپلیکیشن Semicoder اکنون در اپ استور و گوگل پلی در دسترس است. اکنون آن
+                        را
+                        دریافت کنید.</p>
+                    <img src="./images/app_android.png" alt="app">
+                    <img class="mt-3" src="./images/app_ios.png" alt="app">
+                    <ul class="mt-5 flex flex-wrap gap-3">
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#3b5998] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-facebook-f"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#1da1f2] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-twitter"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#cd201f] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-youtube"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#0077b5] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-linkedin-in"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#f26522] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fas fa-rss"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#ea4c89] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-dribbble"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">حساب من</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">پشتیبانی
+                                محصول</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تسویه
+                                حساب</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">سبد
+                                خرید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">علاقه
+                                مندی</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">مقررات</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">بازخرید
+                                کوپن</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">مشتری مداری</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مشتریان
+                                جدید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">نحوه
+                                استفاده از حساب کاربری</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">سفارش
+                                جدید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">روش های
+                                پرداخت</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تحویل و
+                                ارسال</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مشکلات
+                                سفارش</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">خدمات مشتری</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مرکز
+                                کمک</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تماس</a>
+                        </li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">گزارش</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تیکت</a>
+                        </li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">قوانین</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">ثبت نام خبرنامه</h3>
+                    <p class="text-[#999] my-4">به بیش از 60000 مشترک بپیوندید و هر شنبه یک کوپن تخفیف جدید دریافت کنید.
+                    </p>
+                    <form action="" class="flex w-full">
+                        <input class="py-4 px-3 focus:outline-0 w-3/4" type focus:outline-none
+                            focus:bordfer-[#16bcdc]="text" placeholder="ایمیل شما ...">
+                        <button class="bg-[#16bcdc] text-white px-5" type="submit">اشتراک</button>
+                    </form>
+                    <p class="text-[#999] my-4">
+                        با ارائه آدرس ایمیل خود شما با
+                        <a class="text-[#16bcdc]" href="">قوانین و مقررات</a> موافقت میکنید .
+                    </p>
+                </div>
+            </div>
+            <hr class="border-[#666] my-14">
+            <div class="w-full">
+                <ul class="flex gap-5 w-fit mx-auto flex-wrap">
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">درباره ما</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">تحویل و برگشت</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">حریم خصوصی</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">پشتیبانی</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">رهگیری سفارش</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">تماس با ما</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">سوالات</a></li>
+                </ul>
+                <img class="mx-auto my-7" src="./images/payment.png" alt="">
+                <p class="mx-auto w-fit text-white text-lg">کپی رایت© رویال شاپ. طراحی شده توسط <a
+                        class="text-[#16bcdc]" href="https://Semicoder.ir">سمی کدر</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <script src="./js/all.min.js"></script>
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
+</body>
+</body>
+
+
+</html>

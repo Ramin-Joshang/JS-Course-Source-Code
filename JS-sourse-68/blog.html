@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <title>وبلاگ</title>
+</head>
+
+<body dir="rtl">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header class="bg-[#263C97]">
+        <section class="py-3 text-center border-b border-gray-400 px-5 sm:px-0">
+            <p class="font-light text-[12px] text-white">به فروشگاه سمی کدر خوش آمدید 30 درصد تخفیف برای اولین خرید
+            </p>
+        </section>
+        <nav class=" py-5 shadow-md md:text-sm px-5 md:px-0 relative">
+            <div class="container mx-auto text-center sm:flex sm:justify-between items-center">
+                <div class="w-full sm:w-auto mb-5 sm:mb-0">
+                    <img class="w-28 mx-auto" src="./images/logo.png" alt="logo">
+                </div>
+                <div id="mobile-menu"
+                    class="bg-[#660bce] md:bg-transparent text-white shadow-2xl fixed top-0 bottom-0 z-50 w-[250px] -right-[250px]  pt-14 pr-5 md:pt-0  md:w-auto md:static transition-all duration-500">
+                    <div class="w-full md:hidden">
+                        <img class="" src="./images/logo-white.png" alt="logo">
+                    </div>
+                    <ul class="flex flex-col md:flex-row gap-6 font-medium md:font-light mt-16 md:mt-0">
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-home"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./index.html">
+                                خانه
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-store"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./shop.html">
+                                فروشگاه
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-newspaper"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./blog.html">
+                                وبلاگ
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-phone"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]" href="">
+                                درباره ما
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="w-full sm:w-auto flex gap-5 items-center justify-center sm:justify-start flex-wrap sm:flex-nowrap">
+
+                    <div class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-user"></i></span>
+                        <div>
+                            <a href="">ورود</a>
+                            /
+                            <a href="">ثبت نام</a>
+                        </div>
+                    </div>
+                    <a class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]"
+                        href="">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-heart"></i></span>
+                        <p>علاقه مندی</p>
+                    </a>
+                    <a class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]"
+                        href="">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-shopping-basket"></i></span>
+                        <p>سبد خرید</p>
+                    </a>
+                    <button
+                        class="text-white md:hidden transition-all duration-300 hover:text-[#fcbe00] absolute top-5 left-5"
+                        id="bars">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-bars"></i></span>
+                        <span class="text-lg sm:text-3xl hidden"><i class="fas fa-window-close"></i></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Banner                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="blog-banner">
+        <div class='h-full flex flex-col gap-4 justify-center items-center text-white'>
+            <h2 class="text-7xl">وبلاگ</h2>
+            <p class="text-lg">
+                <a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="./index.html">خانه</a>
+                / وبلاگ
+            </p>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Banner                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Main                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="my-40 px-5 lg:px-0">
+        <div class="container mx-auto">
+            <div class="lg:flex gap-10">
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                  Main                                   -->
+                <!-- ----------------------------------------------------------------------- -->
+                <main class="lg:w-4/6 mt-20 md:mt-0">
+                    <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+                        <div class="relative bg-white rounded-3xl overflow-hidden border group">
+                            <div class="overflow-hidden">
+                                <img class="w-full transition-all duration-300 group-hover:scale-110"
+                                    src="./images/blogs/sm-b2-1.jpg" alt="blog">
+                            </div>
+                            <div class="py-5 px-7">
+                                <a href="./blog-details.html">
+                                    <h3 class="text-2xl transition-all duration-300 hover:text-[#16bcdc]">
+                                        غذای کبابی مخلوط خوشمزه برای آخر هفته با خانواده و دوستان
+                                    </h3>
+                                </a>
+                                <p class="my-3 text-md text-[#999]">نویسنده : <span class="text-[#16bcdc]">رامین</span>
+                                </p>
+                                <p class="text-lg text-[#666]">
+                                    همراه با محفظه ای است که می تواند تا سه دیفیوزر مختلف داشته باشد و برای نگهداری خشک
+                                    چای شل استفاده شود. بهترین راه برای لذت بردن از دم کردن چای روی میوه به...
+                                </p>
+                                <hr class="my-4">
+                                <div class="flex justify-between">
+                                    <a class="transition-all duration-300 hover:text-[#16bcdc]" href="">ادامه مطلب</a>
+                                    <span class="text-[#555]">2 دی 1400</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-5 right-5">
+                                <a class="bg-[#16bcdc] text-white px-2" href="">غذا و نوشیدنی</a>
+                            </div>
+                        </div>
+                        <div class="relative bg-white rounded-3xl overflow-hidden border group">
+                            <div class="overflow-hidden">
+                                <img class="w-full transition-all duration-300 group-hover:scale-110"
+                                    src="./images/blogs/sm-b2-2.jpg" alt="blog">
+                            </div>
+                            <div class="py-5 px-7">
+                                <a href="./blog-details.html">
+                                    <h3 class="text-2xl transition-all duration-300 hover:text-[#16bcdc]">
+                                        گوشت خوک کبابی خوشمزه برای این دیدارهای خانوادگی با اجاق زغال سنگ
+                                    </h3>
+                                </a>
+                                <p class="my-3 text-md text-[#999]">نویسنده : <span class="text-[#16bcdc]">رامین</span>
+                                </p>
+                                <p class="text-lg text-[#666]">
+                                    همراه با محفظه ای است که می تواند تا سه دیفیوزر مختلف داشته باشد و برای نگهداری خشک
+                                    چای شل استفاده شود. بهترین راه برای لذت بردن از دم کردن چای روی میوه به...
+                                </p>
+                                <hr class="my-4">
+                                <div class="flex justify-between">
+                                    <a class="transition-all duration-300 hover:text-[#16bcdc]" href="">ادامه مطلب</a>
+                                    <span class="text-[#555]">2 دی 1400</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-5 right-5">
+                                <a class="bg-[#16bcdc] text-white px-2" href="">غذا و نوشیدنی</a>
+                            </div>
+                        </div>
+                        <div class="relative bg-white rounded-3xl overflow-hidden border group">
+                            <div class="overflow-hidden">
+                                <img class="w-full transition-all duration-300 group-hover:scale-110"
+                                    src="./images/blogs/sm-b2-3.jpg" alt="blog">
+                            </div>
+                            <div class="py-5 px-7">
+                                <a href="./blog-details.html">
+                                    <h3 class="text-2xl transition-all duration-300 hover:text-[#16bcdc]">
+                                        خرچنگ چاشنی خوشمزه مناسب برای تعطیلات تابستانی خانوادگی
+                                    </h3>
+                                </a>
+                                <p class="my-3 text-md text-[#999]">نویسنده : <span class="text-[#16bcdc]">رامین</span>
+                                </p>
+                                <p class="text-lg text-[#666]">
+                                    همراه با محفظه ای است که می تواند تا سه دیفیوزر مختلف داشته باشد و برای نگهداری خشک
+                                    چای شل استفاده شود. بهترین راه برای لذت بردن از دم کردن چای روی میوه به...
+                                </p>
+                                <hr class="my-4">
+                                <div class="flex justify-between">
+                                    <a class="transition-all duration-300 hover:text-[#16bcdc]" href="">ادامه مطلب</a>
+                                    <span class="text-[#555]">2 دی 1400</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-5 right-5">
+                                <a class="bg-[#16bcdc] text-white px-2" href="">غذا و نوشیدنی</a>
+                            </div>
+                        </div>
+                        <div class="relative bg-white rounded-3xl overflow-hidden border group">
+                            <div class="overflow-hidden">
+                                <img class="w-full transition-all duration-300 group-hover:scale-110"
+                                    src="./images/blogs/sm-b2-4.jpg" alt="blog">
+                            </div>
+                            <div class="py-5 px-7">
+                                <a href="./blog-details.html">
+                                    <h3 class="text-2xl transition-all duration-300 hover:text-[#16bcdc]">
+                                        غذاهای دریایی کبابی با سبزیجات و میوه های خوشمزه و با دوستان
+                                    </h3>
+                                </a>
+                                <p class="my-3 text-md text-[#999]">نویسنده : <span class="text-[#16bcdc]">رامین</span>
+                                </p>
+                                <p class="text-lg text-[#666]">
+                                    همراه با محفظه ای است که می تواند تا سه دیفیوزر مختلف داشته باشد و برای نگهداری خشک
+                                    چای شل استفاده شود. بهترین راه برای لذت بردن از دم کردن چای روی میوه به...
+                                </p>
+                                <hr class="my-4">
+                                <div class="flex justify-between">
+                                    <a class="transition-all duration-300 hover:text-[#16bcdc]" href="">ادامه مطلب</a>
+                                    <span class="text-[#555]">2 دی 1400</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-5 right-5">
+                                <a class="bg-[#16bcdc] text-white px-2" href="">غذا و نوشیدنی</a>
+                            </div>
+                        </div>
+                        <div class="relative bg-white rounded-3xl overflow-hidden border group">
+                            <div class="overflow-hidden">
+                                <img class="w-full transition-all duration-300 group-hover:scale-110"
+                                    src="./images/blogs/sm-b2-5.jpg" alt="blog">
+                            </div>
+                            <div class="py-5 px-7">
+                                <a href="./blog-details.html">
+                                    <h3 class="text-2xl transition-all duration-300 hover:text-[#16bcdc]">
+                                        آیا می دانید چگونه افراد به درستی از هدفون استفاده کنند؟
+                                    </h3>
+                                </a>
+                                <p class="my-3 text-md text-[#999]">نویسنده : <span class="text-[#16bcdc]">رامین </span>
+                                </p>
+                                <p class="text-lg text-[#666]">
+                                    همراه با محفظه ای است که می تواند تا سه دیفیوزر مختلف داشته باشد و برای نگهداری خشک
+                                    چای شل استفاده شود. بهترین راه برای لذت بردن از دم کردن چای روی میوه به...
+                                </p>
+                                <hr class="my-4">
+                                <div class="flex justify-between">
+                                    <a class="transition-all duration-300 hover:text-[#16bcdc]" href="">ادامه مطلب</a>
+                                    <span class="text-[#555]">2 دی 1400</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-5 right-5">
+                                <a class="bg-[#16bcdc] text-white px-2" href="">غذا و نوشیدنی</a>
+                            </div>
+                        </div>
+                        <div class="relative bg-white rounded-3xl overflow-hidden border group">
+                            <div class="overflow-hidden">
+                                <img class="w-full transition-all duration-300 group-hover:scale-110"
+                                    src="./images/blogs/sm-b2-6.jpg" alt="blog">
+                            </div>
+                            <div class="py-5 px-7">
+                                <a href="./blog-details.html">
+                                    <h3 class="text-2xl transition-all duration-300 hover:text-[#16bcdc]">
+                                        لپ تاپ ها در زندگی روزمره رایج تر می شوند، چرا مفید هستند؟
+                                    </h3>
+                                </a>
+                                <p class="my-3 text-md text-[#999]">نویسنده : <span class="text-[#16bcdc]">رامین </span>
+                                </p>
+                                <p class="text-lg text-[#666]">
+                                    همراه با محفظه ای است که می تواند تا سه دیفیوزر مختلف داشته باشد و برای نگهداری خشک
+                                    چای شل استفاده شود. بهترین راه برای لذت بردن از دم کردن چای روی میوه به...
+                                </p>
+                                <hr class="my-4">
+                                <div class="flex justify-between">
+                                    <a class="transition-all duration-300 hover:text-[#16bcdc]" href="">ادامه مطلب</a>
+                                    <span class="text-[#555]">2 دی 1400</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-5 right-5">
+                                <a class="bg-[#16bcdc] text-white px-2" href="">غذا و نوشیدنی</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-20">
+                        <ul class="flex gap-5 w-fit mx-auto">
+                            <li>
+                                <a class="py-3 px-5 text-white bg-[#16bcdc]" href="">1</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">2</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">3</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">4</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">
+                                    >> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                  Main                                   -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                 Sidebar                                 -->
+                <!-- ----------------------------------------------------------------------- -->
+                <aside class="lg:w-2/6 mt-20 lg:mt-0">
+                    <div class="border px-10 py-7">
+                        <h2 class="text-2xl border-b pb-3">جستجو</h2>
+                        <form action="" class="flex w-full mt-10">
+                            <input class="py-5 px-5 bg-[#F5F5F5] focus:outline-0 w-full" type focus:outline-none
+                                focus:bordfer-[#16bcdc]="text" placeholder="جستجو ...">
+                            <button class="bg-[#16bcdc] text-white px-6 " type="submit"><span><i
+                                        class="fas fa-search"></i></span></button>
+                        </form>
+                    </div>
+                    <div class="border px-10 py-7 mt-12">
+                        <h2 class="text-2xl border-b pb-3">فید های محبوب</h2>
+                        <div class="mt-10">
+                            <div class="flex gap-5">
+                                <img class="w-24 h-24" src="./images/blogs/sm-b-1.jpg" alt="">
+                                <div>
+                                    <a href=""
+                                        class="text-lg font-medium text-[#1F2024] transition-all duration-300 hover:text-[#16bcdc] leading-5">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    </a>
+                                    <p class="mt-2 text-[#222]">
+                                        <span><i class="far fa-calendar-alt"></i></span> 2 دی 1400
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="my-8">
+                            <div class="flex gap-5">
+                                <img class="w-24 h-24" src="./images/blogs/sm-b-2.jpg" alt="">
+                                <div>
+                                    <a href=""
+                                        class="text-lg font-medium text-[#1F2024] transition-all duration-300 hover:text-[#16bcdc] leading-5">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    </a>
+                                    <p class="mt-2 text-[#222]">
+                                        <span><i class="far fa-calendar-alt"></i></span> 2 دی 1400
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="my-8">
+                            <div class="flex gap-5">
+                                <img class="w-24 h-24" src="./images/blogs/sm-b-3.jpg" alt="">
+                                <div>
+                                    <a href=""
+                                        class="text-lg font-medium text-[#1F2024] transition-all duration-300 hover:text-[#16bcdc] leading-5">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    </a>
+                                    <p class="mt-2 text-[#222]">
+                                        <span><i class="far fa-calendar-alt"></i></span> 2 دی 1400
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="my-8">
+                            <div class="flex gap-5">
+                                <img class="w-24 h-24" src="./images/blogs/sm-b-4.jpg" alt="">
+                                <div>
+                                    <a href=""
+                                        class="text-lg font-medium text-[#1F2024] transition-all duration-300 hover:text-[#16bcdc] leading-5">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    </a>
+                                    <p class="mt-2 text-[#222]">
+                                        <span><i class="far fa-calendar-alt"></i></span> 2 دی 1400
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border px-10 py-7 mt-12">
+                        <h2 class="text-2xl border-b pb-3">دسته بندی</h2>
+                        <div class="mt-10">
+                            <a href="" class="flex items-center mb-3 group">
+                                <p class="bg-[#F8F8F8] py-4 text-lg px-5 w-full">تجارت</p>
+                                <span
+                                    class="text-sm bg-[#EFEFEF] p-5 transition-colors duration-300 group-hover:text-white group-hover:bg-[#16bcdc]">26</span>
+                            </a>
+                            <a href="" class="flex items-center mb-3 group">
+                                <p class="bg-[#F8F8F8] py-4 text-lg px-5 w-full">مالی</p>
+                                <span
+                                    class="text-sm bg-[#EFEFEF] p-5 transition-colors duration-300 group-hover:text-white group-hover:bg-[#16bcdc]">26</span>
+                            </a>
+                            <a href="" class="flex items-center mb-3 group">
+                                <p class="bg-[#F8F8F8] py-4 text-lg px-5 w-full">خلاقیت</p>
+                                <span
+                                    class="text-sm bg-[#EFEFEF] p-5 transition-colors duration-300 group-hover:text-white group-hover:bg-[#16bcdc]">26</span>
+                            </a>
+                            <a href="" class="flex items-center mb-3 group">
+                                <p class="bg-[#F8F8F8] py-4 text-lg px-5 w-full">طراحی</p>
+                                <span
+                                    class="text-sm bg-[#EFEFEF] p-5 transition-colors duration-300 group-hover:text-white group-hover:bg-[#16bcdc]">26</span>
+                            </a>
+                            <a href="" class="flex items-center group">
+                                <p class="bg-[#F8F8F8] py-4 text-lg px-5 w-full">فناوری</p>
+                                <span
+                                    class="text-sm bg-[#EFEFEF] p-5 transition-colors duration-300 group-hover:text-white group-hover:bg-[#16bcdc]">26</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border px-10 py-7 mt-12">
+                        <h2 class="text-2xl border-b pb-3">برچسب ها</h2>
+                        <div class="mt-10">
+                            <ul class="flex gap-5 gap-y-7 flex-wrap">
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">محبوب</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">طراحی</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">استفاده</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">آیکن</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">کیت</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">تجارت</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">کیپد</a></li>
+                                <li><a class="px-5 py-1.5 bg-[#f4f4f4]" href="">فناوری</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                 Sidebar                                 -->
+                <!-- ----------------------------------------------------------------------- -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Main                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="bg-[#1F2024] p-5 lg:px-0">
+        <div class="container mx-auto">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-10 py-5">
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-truck"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2"> تحویل رایگان </h5>
+                        <p class="text-[#999] text-sm"> برای تمام سفارشات بالای 120 دلار</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-money-check"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">پرداخت مطمئن</h5>
+                        <p class="text-[#999] text-sm"> 100% پرداخت امن</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-comments"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">مرکز کمک 24/7</h5>
+                        <p class="text-[#999] text-sm"> پشتیبانی ظریف 24/7</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-hand-holding-usd"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">با اطمینان خرید کنید</h5>
+                        <p class="text-[#999] text-sm">اگر کالا مشکل دارد</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-headset"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">خدمات دوستانه</h5>
+                        <p class="text-[#999] text-sm">30 روز ضمانت رضایت</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-[#666] my-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gapx-10 py-7">
+                <div>
+                    <h3 class="text-white text-xl">دانلود</h3>
+                    <p class="text-[#999] my-5">اپلیکیشن Semicoder اکنون در اپ استور و گوگل پلی در دسترس است. اکنون آن
+                        را
+                        دریافت کنید.</p>
+                    <img src="./images/app_android.png" alt="app">
+                    <img class="mt-3" src="./images/app_ios.png" alt="app">
+                    <ul class="mt-5 flex flex-wrap gap-3">
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#3b5998] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-facebook-f"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#1da1f2] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-twitter"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#cd201f] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-youtube"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#0077b5] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-linkedin-in"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#f26522] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fas fa-rss"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#ea4c89] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-dribbble"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">حساب من</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">پشتیبانی
+                                محصول</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تسویه
+                                حساب</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">سبد
+                                خرید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">علاقه
+                                مندی</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">مقررات</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">بازخرید
+                                کوپن</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">مشتری مداری</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مشتریان
+                                جدید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">نحوه
+                                استفاده از حساب کاربری</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">سفارش
+                                جدید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">روش های
+                                پرداخت</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تحویل و
+                                ارسال</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مشکلات
+                                سفارش</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">خدمات مشتری</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مرکز
+                                کمک</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تماس</a>
+                        </li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">گزارش</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تیکت</a>
+                        </li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">قوانین</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">ثبت نام خبرنامه</h3>
+                    <p class="text-[#999] my-4">به بیش از 60000 مشترک بپیوندید و هر شنبه یک کوپن تخفیف جدید دریافت کنید.
+                    </p>
+                    <form action="" class="flex w-full">
+                        <input class="py-4 px-3 focus:outline-0 w-3/4" type focus:outline-none
+                            focus:bordfer-[#16bcdc]="text" placeholder="ایمیل شما ...">
+                        <button class="bg-[#16bcdc] text-white px-5" type="submit">اشتراک</button>
+                    </form>
+                    <p class="text-[#999] my-4">
+                        با ارائه آدرس ایمیل خود شما با
+                        <a class="text-[#16bcdc]" href="">قوانین و مقررات</a> موافقت میکنید .
+                    </p>
+                </div>
+            </div>
+            <hr class="border-[#666] my-14">
+            <div class="w-full">
+                <ul class="flex gap-5 w-fit mx-auto flex-wrap">
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">درباره ما</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">تحویل و برگشت</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">حریم خصوصی</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">پشتیبانی</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">رهگیری سفارش</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">تماس با ما</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">سوالات</a></li>
+                </ul>
+                <img class="mx-auto my-7" src="./images/payment.png" alt="">
+                <p class="mx-auto w-fit text-white text-lg">کپی رایت© رویال شاپ. طراحی شده توسط <a
+                        class="text-[#16bcdc]" href="https://Semicoder.ir">سمی کدر</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <script src="./js/all.min.js"></script>
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

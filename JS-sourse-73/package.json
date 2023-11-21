@@ -1,0 +1,16 @@
+{
+  "name": "royal-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "server": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "Ramin Joshang",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

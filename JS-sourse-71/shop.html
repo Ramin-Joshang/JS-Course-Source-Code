@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>فروشگاه</title>
+</head>
+
+<body dir="rtl">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header class="bg-[#263C97]">
+        <section class="py-3 text-center border-b border-gray-400 px-5 sm:px-0">
+            <p class="font-light text-[12px] text-white">به فروشگاه سمی کدر خوش آمدید 30 درصد تخفیف برای اولین خرید
+            </p>
+        </section>
+        <nav class=" py-5 shadow-md md:text-sm px-5 md:px-0 relative">
+            <div class="container mx-auto text-center sm:flex sm:justify-between items-center">
+                <div class="w-full sm:w-auto mb-5 sm:mb-0">
+                    <img class="w-28 mx-auto" src="./images/logo.png" alt="logo">
+                </div>
+                <div id="mobile-menu"
+                    class="bg-[#660bce] md:bg-transparent text-white shadow-2xl fixed top-0 bottom-0 z-50 w-[250px] -right-[250px]  pt-14 pr-5 md:pt-0  md:w-auto md:static transition-all duration-500">
+                    <div class="w-full md:hidden">
+                        <img class="" src="./images/logo-white.png" alt="logo">
+                    </div>
+                    <ul class="flex flex-col md:flex-row gap-6 font-medium md:font-light mt-16 md:mt-0">
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-home"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./index.html">
+                                خانه
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-store"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]"
+                                href="./shop.html">
+                                فروشگاه
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-newspaper"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]" href="">
+                                وبلاگ
+                            </a>
+                        </li>
+                        <li class="flex gap-2 group">
+                            <span class="group-hover:text-[#fcbe00] md:hidden"><i class="fas fa-phone"></i></span>
+                            <a class="text-white transition-all duration-300 group-hover:text-[#fcbe00]" href="">
+                                درباره ما
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="w-full sm:w-auto flex gap-5 items-center justify-center sm:justify-start flex-wrap sm:flex-nowrap">
+
+                    <div class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-user"></i></span>
+                        <div>
+                            <a href="">ورود</a>
+                            /
+                            <a href="">ثبت نام</a>
+                        </div>
+                    </div>
+                    <a class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]"
+                        href="">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-heart"></i></span>
+                        <p>علاقه مندی</p>
+                    </a>
+                    <a class="flex items-center gap-2 text-white transition-all duration-300 hover:text-[#fcbe00]"
+                        href="">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-shopping-basket"></i></span>
+                        <p>سبد خرید</p>
+                    </a>
+                    <button
+                        class="text-white md:hidden transition-all duration-300 hover:text-[#fcbe00] absolute top-5 left-5"
+                        id="bars">
+                        <span class="text-lg sm:text-3xl"><i class="fas fa-bars"></i></span>
+                        <span class="text-lg sm:text-3xl hidden"><i class="fas fa-window-close"></i></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section class="mt-20 px-5 lg:px-0">
+        <div class="container mx-auto">
+            <div class="lg:flex gap-10">
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                 Sidebar                                 -->
+                <!-- ----------------------------------------------------------------------- -->
+                <aside class="lg:w-1/4">
+                    <div class="p-10 border">
+                        <div class="sm:border-b sm:border-b-[#e5e5e5] sm:flex justify-between items-center">
+                            <h2 class="inline-block text-xl border-b-[3px] border-b-[#16bcdc] pb-4">
+                                دسته بندی محصولات
+                            </h2>
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    پوشاک
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    الکتریکی
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    فناوری
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    تلفن
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    نوزاد
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    کتاب
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    ورزشی
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    صندلی
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    مبلمان
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    خانه
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    روشنایی
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    تبلت
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-10 mt-10 border">
+                        <div class="sm:border-b sm:border-b-[#e5e5e5] sm:flex justify-between items-center">
+                            <h2 class="inline-block text-xl border-b-[3px] border-b-[#16bcdc] pb-4">
+                                تعیین قیمت </h2>
+                        </div>
+                        <div class="mt-5">
+                            <input type="range" min="0" max="5" value="2.5" step="0.5"
+                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                            <div class="mt-5 flex justify-between text-lg">
+                                <p class="text-[#666666]"><span>20</span> تومان</p>
+                                <button type="button"
+                                    class="cursor-pointer transition-colors duration-300 hover:text-[#16bcdc]">اعمال</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10 mt-10 border">
+                        <div class="sm:border-b sm:border-b-[#e5e5e5] sm:flex justify-between items-center">
+                            <h2 class="inline-block text-xl border-b-[3px] border-b-[#16bcdc] pb-4">
+                                تعیین قیمت </h2>
+                        </div>
+                        <ul class="mt-5 flex flex-wrap justify-between">
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-black w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-blue-700 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-red-600 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-yellow-400 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-pink-400 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-amber-700 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-green-600 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                            <li class="border p-1 rounded-full hover:border-black">
+                                <a class="bg-orange-500 w-5 h-5 block rounded-full" href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-10 mt-10 border">
+                        <div class="sm:border-b sm:border-b-[#e5e5e5] sm:flex justify-between items-center">
+                            <h2 class="inline-block text-xl border-b-[3px] border-b-[#16bcdc] pb-4">
+                                انتخاب امتیاز </h2>
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span> <span
+                                        class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="p-10 mt-10 border">
+                        <div class="sm:border-b sm:border-b-[#e5e5e5] sm:flex justify-between items-center">
+                            <h2 class="inline-block text-xl border-b-[3px] border-b-[#16bcdc] pb-4">
+                                انتخاب اندازه </h2>
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    S
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    L
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    M
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    XL
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    2XL
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    3XL
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-10 mt-10 border">
+                        <div class="sm:border-b sm:border-b-[#e5e5e5] sm:flex justify-between items-center">
+                            <h2 class="inline-block text-xl border-b-[3px] border-b-[#16bcdc] pb-4">
+                                انتخاب برند </h2>
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    گوگل
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    سامسونگ
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    مایکروسافت
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    متا
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    بوش <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center gap-3 group w-fit mb-3">
+                                <input class="w-5 h-5 accent-[#16bcdc]" type="checkbox">
+                                <a class="text-[#666666] text-lg transition-colors duration-300 group-hover:text-[#16bcdc]"
+                                    href="">
+                                    سونی
+                                    <span class="text-[#bab9b9] text-sm">(12)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                 Sidebar                                 -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                  Main                                   -->
+                <!-- ----------------------------------------------------------------------- -->
+                <main class="lg:w-3/4 mt-20 md:mt-0">
+                    <div class="relative ">
+                        <img class="w-full" src="./images/sl-banner.jpg" alt="">
+                        <!-- <img class="absolute top-6 right-1/3" src="./images/sl-banner-sm.png" alt="">
+                        <div class="absolute top-1/4 left-8">
+                            <p class="text-xl text-white text-center">عجله کن! <br> ارسال
+                                رایگان تمام سفارشات بالای 99 دلار
+                            </p>
+                            <a class="text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-fit rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black"
+                                href="">بررسی
+                                کن</a>
+                        </div> -->
+                        <div class="mt-10 border p-5 flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl text-[#16bcdc] ml-3"><i class="fas fa-th"></i></span>
+                                <span class="text-2xl text-[#b6b6b6]"><i class="fas fa-list"></i></span>
+                            </div>
+                            <div>
+                                <select class="py-2 border px-5 focus:outline-none text-[#999]">
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                </select>
+                                <select class="py-2 border px-5 focus:outline-none text-[#999] mr-3">
+                                    <option value="">آخرین</option>
+                                    <option value="">جدید</option>
+                                    <option value="">پر فروش</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-2.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-1.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-3.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-4.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-5.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-6.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-7.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-16.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-9.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-10.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-17.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-12.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-13.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-14.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-15.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-16.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-18.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-20.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-22.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="relative overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
+                            <a class="block p-8 bg-white border" href="">
+                                <div class="overflow-hidden">
+                                    <img class="mx-auto transition-all duration-300 hover:scale-125"
+                                        src="./images/products/tp-23.jpg" alt="product">
+                                </div>
+                                <div>
+                                    <h3 class="transition-colors duration-300 hover:text-[#16bcdc]">اپل آی
+                                        پد پرو 10.5 اینچی 64GB</h3>
+                                    <div class="my-3">
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                                        <span class="text-yellow-400"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <h5 class="text-sm"><span class="text-green-500 pl-1">2.000.000 </span> تومان
+                                    </h5>
+                                    <button
+                                        class="text-sm text-white py-3 px-10 mt-5 block bg-[#16bcdc] w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-white hover:text-black hover:border">
+                                        افزودن به سبد
+                                    </button>
+                                    <button
+                                        class="text-sm text-black border py-3 px-10 mt-3 block bg-white w-full rounded-sm mx-auto transition-colors duration-300 hover:bg-[#16bcdc] hover:text-white">
+                                        مشاهده سریع
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-1 absolute top-[15%] -left-10 transition-all duration-300 group-hover:left-0">
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-eye"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <span
+                                        class="bg-[#F5F5F5] text-[#42381C] p-2 transition-all duration-300 hover:text-white hover:bg-[#16bcdc]">
+                                        <i class="fas fa-layer-group"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="mt-10 mb-20">
+                        <ul class="flex gap-5 w-fit mx-auto">
+                            <li>
+                                <a class="py-3 px-5 text-white bg-[#16bcdc]" href="">1</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">2</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">3</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">4</a>
+                            </li>
+                            <li>
+                                <a class="bg-[#f5f5f5] py-3 px-5 transition-colors duration-300 hover:text-white hover:bg-[#16bcdc]"
+                                    href="">
+                                    >> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                  Main                                   -->
+                <!-- ----------------------------------------------------------------------- -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="bg-[#1F2024] p-5 lg:px-0">
+        <div class="container mx-auto">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-10 py-5">
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-truck"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2"> تحویل رایگان </h5>
+                        <p class="text-[#999] text-sm"> برای تمام سفارشات بالای 120 دلار</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-money-check"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">پرداخت مطمئن</h5>
+                        <p class="text-[#999] text-sm"> 100% پرداخت امن</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-comments"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">مرکز کمک 24/7</h5>
+                        <p class="text-[#999] text-sm"> پشتیبانی ظریف 24/7</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-hand-holding-usd"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">با اطمینان خرید کنید</h5>
+                        <p class="text-[#999] text-sm">اگر کالا مشکل دارد</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#16bcdc] text-[40px]"><i class="fas fa-headset"></i></span>
+                    <div>
+                        <h5 class="text-white mb-2">خدمات دوستانه</h5>
+                        <p class="text-[#999] text-sm">30 روز ضمانت رضایت</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-[#666] my-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10">
+                <div>
+                    <h3 class="text-white text-xl">دانلود</h3>
+                    <p class="text-[#999] my-5">اپلیکیشن Semicoder اکنون در اپ استور و گوگل پلی در دسترس است. اکنون آن
+                        را
+                        دریافت کنید.</p>
+                    <img src="./images/app_android.png" alt="app">
+                    <img class="mt-3" src="./images/app_ios.png" alt="app">
+                    <ul class="mt-5 flex flex-wrap gap-3">
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#3b5998] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-facebook-f"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#1da1f2] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-twitter"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#cd201f] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-youtube"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#0077b5] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-linkedin-in"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#f26522] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fas fa-rss"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                    class="bg-[#ea4c89] w-[50px] h-[50px] flex justify-center items-center rounded-lg text-xl text-white transition-colors duration-300 hover:bg-[#16BCDC]"><i
+                                        class="fab fa-dribbble"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">حساب من</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">پشتیبانی
+                                محصول</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تسویه
+                                حساب</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">سبد
+                                خرید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">علاقه
+                                مندی</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">مقررات</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">بازخرید
+                                کوپن</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">مشتری مداری</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مشتریان
+                                جدید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">نحوه
+                                استفاده از حساب کاربری</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">سفارش
+                                جدید</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">روش های
+                                پرداخت</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تحویل و
+                                ارسال</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مشکلات
+                                سفارش</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">خدمات مشتری</h3>
+                    <ul>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">مرکز
+                                کمک</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تماس</a>
+                        </li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">گزارش</a></li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]" href="">تیکت</a>
+                        </li>
+                        <li class="mb-2 text-lg"><a
+                                class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                                href="">قوانین</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl mb-5">ثبت نام خبرنامه</h3>
+                    <p class="text-[#999] my-4">به بیش از 60000 مشترک بپیوندید و هر شنبه یک کوپن تخفیف جدید دریافت کنید.
+                    </p>
+                    <form action="" class="flex w-full">
+                        <input class="py-4 px-3 focus:outline-0 w-3/4" type="text" placeholder="ایمیل شما ...">
+                        <button class="bg-[#16bcdc] text-white px-5" type="submit">اشتراک</button>
+                    </form>
+                    <p class="text-[#999] my-4">
+                        با ارائه آدرس ایمیل خود شما با
+                        <a class="text-[#16bcdc]" href="">قوانین و مقررات</a> موافقت میکنید .
+                    </p>
+                </div>
+            </div>
+            <hr class="border-[#666] my-14">
+            <div class="w-full">
+                <ul class="flex gap-5 w-fit mx-auto flex-wrap">
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">درباره ما</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">تحویل و برگشت</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">حریم خصوصی</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">پشتیبانی</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">رهگیری سفارش</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">تماس با ما</a><span class="text-[#555] mr-1">|</span></li>
+                    <li class="mb-2 text-lg"><a class="text-[#999] transition-colors duration-300 hover:text-[#16bcdc]"
+                            href="">سوالات</a></li>
+                </ul>
+                <img class="mx-auto my-7" src="./images/payment.png" alt="">
+                <p class="mx-auto w-fit text-white text-lg">کپی رایت© رویال شاپ. طراحی شده توسط <a
+                        class="text-[#16bcdc]" href="https://Semicoder.ir">سمی کدر</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Footer                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+</body>
+</body>
+<!-- Font Awesome -->
+<script src="./js/all.min.js"></script>
+<!-- Scripts -->
+<script src="./js/script.js"></script>
+
+</html>
